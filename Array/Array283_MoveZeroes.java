@@ -1,17 +1,11 @@
+/*
+  Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+  [Note] that you must do this in-place without making a copy of the array.
+*/
 import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class Solution {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String str = sc.nextLine();
-		str = str.substring(1);
-		str = str.substring(0,str.length()-1);
-		
-		int[] splitNum = Stream.of(str.split(",")).mapToInt(Integer::parseInt).toArray();
-		moveZeroes(splitNum);
-	}
-	
 	public static void moveZeroes(int[] nums) {
 		int arrLen = nums.length;	  // length of array
 		int zeroCnt = 0;			      // count of zero
@@ -43,4 +37,13 @@ public class Solution {
 		}
         
     }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		str = str.substring(1);
+		str = str.substring(0,str.length()-1);
+		
+		int[] splitNum = Stream.of(str.split(",")).mapToInt(Integer::parseInt).toArray();
+		moveZeroes(splitNum);
+	}
 }
