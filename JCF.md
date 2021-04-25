@@ -5,16 +5,16 @@ Java Collection Framework (JCF)의 이해
 Java에서 데이터를 저장하는 기본적인 자료구조들을 한곳에 모아 관리 및 사용하기 위해서 제공하는 것을 의미한다.   
 즉, 데이터를 담는 그릇들에 대한 정의를 모아놓은 프레임워크를 의미하며,    
 값의 성격이나 용도에 따라, 활용방법에 따라 다양한 컨테이너를 제공한다.  
-다음은 JCF의 상송 구조이며 사용 용도에 따라 List, Set, Map 3가지로 요약할 수 있다.
+다음은 JCF의 상속 구조이며 사용 용도에 따라 `List`, `Set`, `Map` 3가지로 요약할 수 있다.
 
 <img src="./img/jcf.png" width="580px" height="383px" alt="jcf"></img><br/> 
 
 ## 각 인터페이스 별 특징
 | **인터페이스** | **구현 class** | **특징** |
 |:---:|:---:|:---:|
-| List | ArrayList<br>Stack<br>Vector<br>LinkedList|순서가 있는 데이터의 집합으로,<br>데이터의 중복을 허용한다.|
-| Set | HashSet<br>TreeSet | 순서를 유지하지 않는 데이터의 집합으로,<br>데이터의 중복을 허용하지 않는다. |
-| Map | HashMap<br>TreeMap<br>HashTable | Key-Value쌍으로 이루어진 데이터의 집합으로,<br>키는 절대 중복이 불가하며 값은 중복을 허용할 수도 있다. |
+| **List** | ArrayList<br>Stack<br>Vector<br>LinkedList|순서가 있는 데이터의 집합으로,<br>데이터의 중복을 허용한다.|
+| **Set** | HashSet<br>TreeSet | 순서를 유지하지 않는 데이터의 집합으로,<br>데이터의 중복을 허용하지 않는다. |
+| **Map** | HashMap<br>TreeMap<br>HashTable | Key-Value쌍으로 이루어진 데이터의 집합으로,<br>키는 절대 중복이 불가하며 값은 중복을 허용할 수도 있다. |
    
      
 ### List Interface(순서 O, 데이터 중복 O)
