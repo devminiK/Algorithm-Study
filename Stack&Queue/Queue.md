@@ -9,14 +9,15 @@
 - 큐의 한쪽 끝은 Front로 삭제연산만 수행, 다른 한쪽은 Rear로 삽입 연산만 수행
 
 ## 사용방법
-- add(E item) / offer(E item) 
-	:큐에 item 값을 추가한다.
-- poll()
-	:큐의 첫번째 값을 반환하고 제거. 비어있으면 null
-- remove()
-	:큐의 첫번째 값 제거
-- clear()
-	:큐 초기화	
+- **add(E item) / offer(E item)**    
+  :큐에 item 값을 추가한다.
+- **poll()**   
+  :큐의 첫번째 값을 반환하고 제거. 비어있으면 null
+- **remove()**   
+  :큐의 첫번째 값 제거
+- **clear()**   
+  :큐 초기화
+     
 ```java
 import java.util.LinkedList;
 import java.util.Queue;
@@ -26,9 +27,9 @@ Queue<String> queue = new LinkedList<>(); 	//String형 queue 선언, linkedlist 
 ```	
 
 ## 시간복잡도
-Insertion O(1)
-Deletion O(1)
-Search O(n)
+**Insertion** O(1)   
+**Deletion** O(1)   
+**Search** O(n)   
 
 ## 장점
 - 데이터의 삽입/삭제가 빠르다. O(1)
