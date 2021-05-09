@@ -1,6 +1,6 @@
 # 03. 큐(Queue)
 
-![queue-1](./img/queue-1.png)
+![queue-1](../img/queue-1.png)
 
 ## 특징
 먼저 넣은 데이터가 먼저 나오는 구조
