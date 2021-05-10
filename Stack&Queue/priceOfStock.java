@@ -9,16 +9,16 @@
 /* my solution 1 : 중첩for문으로 해결 */
 class Solution {
     public static int[] solution(int[] prices) {
-		 int len = prices.length;
-	     int[] answer = new int[len];
+	    int len = prices.length;
+	    int[] answer = new int[len];
 	        
-	        for (int i=0; i<len; i++) {
-	        	for (int j = i+1; j<len; j++) {
-	        		answer[i]++;
-	        		if (prices[i]>prices[j])
-	        			break;
-	        	}
+	    for (int i=0; i<len; i++) {
+	    	for (int j = i+1; j<len; j++) {
+	        	answer[i]++;
+	        	if (prices[i]>prices[j])
+	        		break;
 	        }
-	        return answer;
 	    }
+	        return answer;
+    }
 }
