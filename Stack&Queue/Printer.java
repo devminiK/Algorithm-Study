@@ -24,17 +24,18 @@ class Solution {
         int answer = 0;
         Queue<Printer> queue = new LinkedList<>(); //큐 생성
 
-        // 큐에 저장(우선순위도 포함)
+		// 큐에 저장(우선순위도 포함)
 		for (int i = 0; i < priorities.length; i++) {
 			queue.add(new Printer(i, priorities[i]));
 		}
 
 		while (!queue.isEmpty()) {
 			boolean biggerFlag = false;
-			int com = queue.peek().prior;
-			for (Printer p : queue) {
+			int comp = queue.peek().prior;
+			
+			for (Printer el : queue) {
 				// 맨앞의 수보다 큰 숫자가 존재하면
-				if (com < p.prior) { 
+				if (comp < el.prior) {
 					biggerFlag = true;
 				}
 			}
@@ -42,18 +43,19 @@ class Solution {
 			if (biggerFlag) {
 				queue.add(queue.poll());
 			} else {
-                // 현재 맨앞의 숫자가 가장 클 때
+				// 현재 맨앞의 숫자가 가장 클 때
 				if (queue.poll().location == location) {
 					answer = priorities.length - queue.size();
 				}
 			}
 		}
-        return answer;
+		return answer;
     }
 }
+
 class Printer {
 	int location;	//인덱스 저장용
-	int prior;		//우선순위 저장용
+	int prior;	//우선순위 저장용
 
 	Printer(int location, int prior) {
 		this.location = location;
