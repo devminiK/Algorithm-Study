@@ -1,4 +1,4 @@
-== 05. 연결 리스트(LinkedList)
+= 05. 연결 리스트(LinkedList)
 연결리스트는 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식의 자료구조다
 <img src="../img/LinkedList-1.png" width="609px" height="142px" alt="LinkedList"></img><br/> 
 
